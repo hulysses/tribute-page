@@ -91,3 +91,15 @@ body {
   right: 0;
   width: 350px;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
