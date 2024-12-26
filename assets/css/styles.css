@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+html.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
   background-color: #040404;
 }
 
@@ -57,7 +63,8 @@ body {
   border: 1px solid #fff;
 }
 
-.hero {
+.hero,
+.legacy {
   height: 500px;
   background-color: #fff;
   overflow: hidden;
@@ -71,7 +78,8 @@ body {
   align-items: center;
 }
 
-.hero-text {
+.hero-text,
+.legacy-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -81,10 +89,6 @@ body {
   font-size: 3rem;
 }
 
-.tribute p {
-  font-size: 1rem;
-}
-
 .tribute img {
   position: absolute;
   bottom: 0;
@@ -92,14 +96,73 @@ body {
   width: 350px;
 }
 
-.about {
+.about,
+.career {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 20px;
+  padding-top: 60px;
   color: #fff;
 }
 
 .about h2 {
   font-size: 2rem;
 }
+
+.career {
+  padding-bottom: 60px;
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+}
+
+.images img {
+  width: 400px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.legacy-grid {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.legacy-grid img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.quote {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.quote h2 {
+  width: 900px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.quote p {
+  color: #fff;
+}
+
+.footer {
+  color: #fff8;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #fff2;
+}
+
