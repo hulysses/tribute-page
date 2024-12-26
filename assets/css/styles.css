@@ -7,7 +7,7 @@
 body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  background-color: #4f5151;
+  background-color: #040404;
 }
 
 .container {
@@ -21,7 +21,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header a {
@@ -54,6 +53,41 @@ body {
 }
 
 .menu li a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid #fff;
+}
+
+.hero {
+  height: 500px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.tribute {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tribute h1 {
+  font-size: 3rem;
+}
+
+.tribute p {
+  font-size: 1rem;
+}
+
+.tribute img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 350px;
 }
